@@ -41,12 +41,14 @@ console.log(und);
 // Null
 let n = null;
 console.log(n);
+console.log("-------------------------------");
 
 // Array
 // Collection of elements
 let arr = ["Kashif", "Aziz", "Ali", "Karim", "Kalim"];
 console.log(arr[2]);
 console.log(arr);
+console.log("-------------------------------");
 
 // at a very high level, there are two types of data types in JavaScript
 // 1. Primitive datatype: undefined,null,number,string,boolean,symbo;
@@ -61,6 +63,7 @@ console.log("The value of a - b is ", a - b);
 console.log("The value of a * b is ", a * b);
 console.log("The value of a / b is ", a / b);
 console.log("The value of a % b is ", a % b);
+console.log("-------------------------------");
 // Assignment Operators
 let c = 22;
 c = 45;
@@ -69,6 +72,7 @@ c += 2;
 c *= 2;
 c /= 2;
 console.log(c);
+console.log("-------------------------------");
 // Comparison Operators
 let x = 33;
 let y = 45;
@@ -77,6 +81,7 @@ console.log(x > y);
 console.log(x < y);
 console.log(x <= y);
 console.log(x >= y);
+console.log("-------------------------------");
 // Logical Operators
 console.log(true && true);
 console.log(true && false);
@@ -93,7 +98,7 @@ function avg(a, b) {
 c1 = avg(22, 33);
 c2 = avg(657, 876);
 console.log(c1, c2);
-
+console.log("-------------------------------");
 // Condotional in JavaScript
 let age = 44;
 if (age > 18) {
@@ -101,7 +106,7 @@ if (age > 18) {
 } else {
   console.log("Minor");
 }
-
+console.log("-------------------------------");
 // Loops
 let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // For Loop
@@ -131,3 +136,95 @@ do {
   console.log(arr1[i]);
   i++;
 } while (i < arr1.length);
+
+console.log("-------------------------------");
+
+let arr2 = ["Fan", "Camera", 32, null, true];
+console.log(arr2.length);
+console.log("-------------------------------");
+
+arr2.pop();
+arr2.push("Harry");
+arr2.shift();
+arr2.unshift("Harry");
+// arr2.toString();
+// arr2.sort();
+
+for (let i = 0; i < arr2.length; i++) {
+  console.log(arr2[i]);
+}
+
+console.log("-------------------------------");
+
+// String method is JavaScript
+let myString = "My name is Kashif Aziz";
+console.log(myString.length);
+console.log(myString.indexOf("Kashif"));
+console.log(myString.lastIndexOf("Aziz"));
+console.log(myString.slice(3, 10));
+console.log(myString.replace("Aziz", "Hunzai"));
+
+console.log("-------------------------------");
+
+let myDate = new Date();
+console.log(myDate);
+console.log(myDate.getDate());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+
+console.log("-------------------------------");
+
+// DOM manipulation
+let elem = document.getElementById("click");
+console.log(elem);
+
+let elemClass = document.getElementsByClassName("container");
+console.log(elemClass);
+elemClass[0].style.background = "yellow";
+elemClass[0].classList.add("bg-primary");
+console.log(elem.innerHTML);
+console.log(elem.innerText);
+
+console.log("-------------------------------");
+
+tn = document.getElementsByTagName("button");
+console.log(tn);
+createdElement = document.createElement("p");
+tn[0].appendChild(createdElement);
+// removeChild(element); ---> removes an element;
+
+console.log("-------------------------------");
+
+// Selecting using Query
+sel = document.querySelector(".container");
+console.log(sel);
+sel = document.querySelectorAll(".container");
+console.log(sel);
+
+console.log("-------------------------------");
+
+// Events in JavaScript
+function clicked() {
+  console.log("The button was clicked");
+}
+window.onload = function () {
+  console.log("The document was loaded");
+};
+
+firstContainer.addEventListener("mouseover", function () {
+  console.log("Clicked");
+});
+firstContainer.addEventListener("click", function () {
+  console.log("Mouse over container");
+});
+firstContainer.addEventListener("mouseout", function () {
+  console.log("Mouse out of container");
+});
+firstContainer.addEventListener("mouseup", function () {
+  console.log("Mouse up on container");
+});
+firstContainer.addEventListener("mousedown", function () {
+  console.log("Mouse down on container");
+});
+
+console.log("-------------------------------");
