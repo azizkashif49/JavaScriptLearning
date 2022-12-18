@@ -204,27 +204,68 @@ console.log(sel);
 console.log("-------------------------------");
 
 // Events in JavaScript
-function clicked() {
-  console.log("The button was clicked");
-}
-window.onload = function () {
-  console.log("The document was loaded");
-};
+// function clicked() {
+//   console.log("The button was clicked");
+// }
+// window.onload = function () {
+//   console.log("The document was loaded");
+// };
 
-firstContainer.addEventListener("mouseover", function () {
-  console.log("Clicked");
-});
-firstContainer.addEventListener("click", function () {
-  console.log("Mouse over container");
-});
-firstContainer.addEventListener("mouseout", function () {
-  console.log("Mouse out of container");
-});
-firstContainer.addEventListener("mouseup", function () {
-  console.log("Mouse up on container");
-});
-firstContainer.addEventListener("mousedown", function () {
-  console.log("Mouse down on container");
-});
+// firstContainer.addEventListener("mouseover", function () {
+//   console.log("Clicked");
+// });
+// firstContainer.addEventListener("click", function () {
+//   console.log("Mouse over container");
+// });
+// firstContainer.addEventListener("mouseout", function () {
+//   console.log("Mouse out of container");
+// });
+// firstContainer.addEventListener("mouseup", function () {
+//   console.log("Mouse up on container");
+// });
+// firstContainer.addEventListener("mousedown", function () {
+//   console.log("Mouse down on container");
+// });
 
 console.log("-------------------------------");
+// Arrow Function
+function sum() {
+  return 5;
+}
+
+summ = (a, b) => {
+  //This is a arrow function
+  return a + b;
+};
+
+logKaro = () => {
+  console.log("set timeout fired");
+};
+
+// Set timeout function
+setTimeout(logKaro, 2000); //logKaro function will be called after 2000 milliseconds
+clr = setInterval(logKaro, 2000); //after every 2 seconds function will run
+clearInterval(clr);
+// use clearInterval and clearTimeoutto cancel them
+
+// Local Storage in JavaScript
+// localstorage.setItem('name', 'Kashif');
+// localStorage.getItem('name');
+// localStorage.clear
+// localStorage.removeItem
+
+// Json
+obj = {
+  name: "Kashif",
+  class: "BSCS",
+  Age: 32,
+};
+
+jso = JSON.stringify(obj); //converting object into string using json
+console.log(jso);
+console.log(typeof jso);
+
+parsed = JSON.parse(`{"name":"Kashif","class":"BSCS","Age":32}`);
+console.log(parsed);
+
+console.log("-------------------------------------");
